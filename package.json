@@ -1,0 +1,11 @@
+{
+  "name": "butik",
+  "version": "1.0.0",
+  "description": "simple landing side",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Mariusz Krawczyk",
+  "license": "ISC"
+}

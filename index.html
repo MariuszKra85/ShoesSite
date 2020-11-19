@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script
+      src="https://kit.fontawesome.com/e30232a414.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Playfair+Display|Raleway:400,700&amp;display=swap&amp;subset=latin-ext"
       rel="stylesheet"
     />
 
@@ -18,10 +23,10 @@
       <div class="hero">
         <div class="hero-bg"></div>
         <div class="topBar">
-          <div class="logo">
+          <a href="/index.html" class="logo">
             <img class="logo-img" src="./assets/img/logo.png" alt="logo" />
             <p class="logo-text">Shoes Mania</p>
-          </div>
+          </a>
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item dropdown-toggle">
@@ -30,21 +35,119 @@
                   <a class="dropdown-menu-item" href="./shoes.html#sports"
                     >Sport shoes</a
                   >
-                  <a href="./shoes.html#sports">Casual shoes</a>
-                  <a href="./shoes.html#sports">winter shoes</a>
+                  <a class="dropdown-menu-item" href="./shoes.html#sports"
+                    >Casual shoes</a
+                  >
+                  <a class="dropdown-menu-item" href="./shoes.html#sports"
+                    >winter shoes</a
+                  >
                 </div>
+                <img
+                  class="dropdown-arrow"
+                  src="./assets/img/arrow-white.svg"
+                  alt="arrow-white"
+                />
               </li>
               <li class="nav-item">About Us</li>
               <li class="nav-item">Contact</li>
             </ul>
           </nav>
         </div>
-        <div class="hero-content">
+        <div class="hero-content flex-column flex-center">
           <h1 class="hero-title">Shoes Mania</h1>
           <p class="hero-subtitle">For Her and for Him</p>
           <button class="hero-btn">view</button>
         </div>
       </div>
     </header>
+    <main class="main">
+      <aside class="side-nav">
+        <a href="./index.html" class="side-nav-item">About Us</a>
+        <a href="./shoes.html" class="side-nav-item">Our Shoes</a>
+        <a href="./contact.html" class="side-nav-item">Contact</a>
+      </aside>
+      <article class="aboutUs">
+        <h2 class="aboutUs title">About Us</h2>
+        <section class="aboutUs-story">
+          <h3 class="aboutUs-subtitle">About Shoes</h3>
+          <p class="text">Aliquip nulla ut ex aute ea.</p>
+          <h4 class="title-2">Begining</h4>
+          <p class="text">
+            Nostrud consequat magna nisi cillum magna consectetur do irure
+            labore ullamco qui ipsum. Ex tempor deserunt exercitation anim quis
+            enim sunt. Aliquip exercitation laboris labore culpa laborum. Culpa
+            mollit mollit magna irure et consequat fugiat labore. Voluptate
+            aliquip exercitation commodo esse elit tempor ullamco qui. Ut
+            excepteur ea Lorem id sint incididunt laboris consequat velit
+            labore. Deserunt do magna sunt et nulla incididunt dolore
+            reprehenderit deserunt.
+          </p>
+          <div class="quote">
+            <i class="fas fa-quote-right" aria-hidden="true"></i>
+            <p class="quote-text">
+              Ex dolor cupidatat veniam eiusmod Lorem. Culpa anim incididunt eu
+              nulla dolore ea veniam aliqua nisi Lorem sunt. Sit magna est
+              deserunt sint aliquip incididunt nulla. Culpa sit velit elit qui
+              qui in minim eiusmod duis deserunt dolor.
+            </p>
+          </div>
+          <h4 class="title-2">Present</h4>
+          <ul class="present-list">
+            <li class="present-list-item">
+              Velit amet esse minim nisi esse qui ad ullamco id laboris laboris
+              esse ea incididunt.
+            </li>
+
+            <li class="present-list-item">
+              Ullamco ea irure irure dolor veniam est minim aliquip ullamco
+              excepteur et adipisicing ipsum.
+            </li>
+            <li class="present-list-item">
+              Labore Lorem exercitation sint laborum ipsum anim do elit sit ex
+              amet veniam laborum ut.
+            </li>
+            <li class="present-list-item">
+              Aliquip ut enim deserunt irure nostrud exercitation.
+            </li>
+          </ul>
+          <h4 class="title-2">Future</h4>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim,
+            similique esse sunt tenetur quos! Exercitationem odit deserunt quas
+            voluptatibus alias! Quod eius delectus porro ducimus, quae corporis
+            architecto consequuntur?
+          </p>
+          <ul class="future-list">
+            <li class="future-list-item">
+              Aliquip ut enim deserunt irure nostrud exercitation.
+            </li>
+            <li class="future-list-item">
+              Lorem exercitation sint laborum ipsum
+            </li>
+            <li class="future-list-item">
+              irure dolor veniam est minim aliquip
+            </li>
+            <li class="future-list-item">
+              deserunt irure nostrud exercitation.
+            </li>
+            <li class="future-list-item">Ullamco ea irure irure dolor</li>
+          </ul>
+        </section>
+        <section class="aboutUs-ourShoes">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            assumenda saepe. Ratione praesentium placeat quidem omnis quisquam
+            natus, eaque excepturi quas perspiciatis! Earum dolor quas maiores
+            laborum cumque deleniti pariatur?
+          </p>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/6myw3AcQkLg"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </section>
+      </article>
+    </main>
   </body>
 </html>

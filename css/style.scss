@@ -1,10 +1,19 @@
+/*color*/
+
+$primary: rgb(76, 91, 172);
+
+/* fonts*/
+
+$primary-font: "Montserrat";
+$secondary-font: "Raleway";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: $primary-font, sans-serif;
 }
 input,
 button,
@@ -18,8 +27,25 @@ a {
   color: white;
 }
 
+/* utilities*/
+
+.center {
+  margin: 0 auto;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+
 .header {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -34,8 +60,45 @@ a {
     z-index: -1;
     width: 100%;
   }
+  &-content {
+    margin: 0 30px;
+    background-image: url(../assets/img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  &-title {
+    font-size: 72px;
+    font-weight: 700;
+  }
+  &-subtitle {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  &-btn {
+    transition: all ease-in-out 0.3s;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: $primary;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    &:hover {
+      transition: all ease-in-out 0.3s;
+      background-color: white;
+      color: #000000;
+    }
+  }
 }
+
 .topBar {
+  margin-right: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,17 +130,38 @@ a {
 }
 
 .dropdown {
+  &-toggle {
+    display: flex;
+    flex-direction: row;
+  }
   &-toggle:hover {
+    transition: all ease-in-out 0.3s;
+    background: $primary;
     .dropdown-menu {
+      margin-left: -10px;
       position: absolute;
+      top: 60px;
+
       display: flex;
       flex-direction: column;
     }
-    .dropdown-menu-item:hover {
-      background-color: #4c3da3;
+    .dropdown-menu-item {
+      padding: 10px;
+
+      &:hover {
+        transition: all ease-in-out 0.3s;
+        background-color: $primary;
+      }
     }
   }
   &-menu {
     display: none;
   }
+  &-arrow {
+    margin-left: 5px;
+  }
+}
+
+.main {
+  margin-top: 500px;
 }

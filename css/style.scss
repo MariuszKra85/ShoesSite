@@ -1,6 +1,8 @@
 /*color*/
 
 $primary: #86c878;
+$casual: #78c8c0;
+$winter: #78a1c8;
 $bg-primary: #191c19;
 
 /* fonts*/
@@ -347,7 +349,6 @@ a {
     }
   }
 }
-
 .facebook {
   background-image: url(../assets/img/icon-fb-white.svg);
 }
@@ -357,7 +358,6 @@ a {
 .twitter {
   background-image: url(../assets/img/icon-twitter-white.svg);
 }
-
 .col {
   padding: 0 50px;
   display: flex;
@@ -374,4 +374,122 @@ a {
 }
 .hr {
   border: 1px solid #303430;
+}
+.main-product {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.shoes-nav {
+  display: flex;
+  width: 300px;
+  margin: 30px auto;
+
+  &-item {
+    border: 1px solid lightgray;
+    padding: 20px;
+
+    &:first-child {
+      border-radius: 20px 0 0 20px;
+    }
+
+    &:last-child {
+      border-radius: 0 20px 20px 0;
+    }
+    a {
+      color: black;
+    }
+  }
+}
+.product {
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px lightgray solid;
+    margin-bottom: 5px;
+  }
+}
+.label {
+  background-color: $primary;
+  padding: 20px 20px 30px 20px;
+  width: 300px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  &-text {
+    margin-bottom: 20px;
+  }
+}
+.sport {
+  background-color: $primary;
+}
+.winter {
+  background-color: $winter;
+}
+.casual {
+  background-color: $casual;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 310px;
+  margin: 20px;
+  &-img {
+    width: 300px;
+    height: 210px;
+  }
+  &-desc {
+    font-size: 25px;
+    margin: 20px;
+  }
+  &-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: $primary;
+  }
+}
+.main-contact {
+  justify-content: center;
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.contact-article {
+  width: 100%;
+  margin-top: 80px;
+}
+.contact-aside {
+  font-size: 20px;
+}
+.open-hours-wrapper {
+  margin: 40px 0 50px;
+}
+.section-form {
+}
+.contact-form {
+  max-width: 700px;
+}
+.form-wrapper {
+}
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  &-label {
+    min-width: 200px;
+    font-size: 20px;
+  }
+  &-input {
+    padding: 10px;
+    width: 300px;
+  }
 }

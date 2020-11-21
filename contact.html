@@ -3,9 +3,404 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/e30232a414.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Playfair+Display|Raleway:400,700&amp;display=swap&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>Contact</title>
   </head>
   <body>
-    Contact
+    <header class="header">
+      <div class="hero">
+        <div class="hero-bg"></div>
+        <div class="topBar">
+          <a href="/index.html" class="logo">
+            <img class="logo-img" src="./assets/img/logo.png" alt="logo" />
+            <p class="logo-text">Shoes Mania</p>
+          </a>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item dropdown-toggle">
+                Product
+                <div class="dropdown-menu">
+                  <a class="dropdown-menu-item" href="./shoes.html#sport"
+                    >Sport shoes</a
+                  >
+                  <a class="dropdown-menu-item" href="./shoes.html#casual"
+                    >Casual shoes</a
+                  >
+                  <a class="dropdown-menu-item" href="./shoes.html#winter"
+                    >winter shoes</a
+                  >
+                </div>
+                <img
+                  class="dropdown-arrow"
+                  src="./assets/img/arrow-white.svg"
+                  alt="arrow-white"
+                />
+              </li>
+              <li class="nav-item"><a href="./index.html">About Us</a></li>
+              <li class="nav-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero-content flex-column flex-center">
+          <h1 class="hero-title">Shoes Mania</h1>
+          <p class="hero-subtitle">For Her and for Him</p>
+          <button class="hero-btn">view</button>
+        </div>
+      </div>
+    </header>
+    <main class="main-contact">
+      <aside class="side-nav">
+        <a class="side-nav-item contact-aside" href="#contact-data"
+          >Contact Details</a
+        >
+        <a class="side-nav-item contact-aside" href="#contact-form"
+          >Contact Form</a
+        >
+        <a class="side-nav-item contact-aside" href="#way-to-us">Map</a>
+      </aside>
+      <article class="contact-article">
+        <h3 class="title">Contact</h3>
+        <section id="contact-data">
+          <h4 class="title-2">Contact Details</h4>
+          <div class="flex-container">
+            <div class="text contact-info">
+              <strong>Shoes Mania</strong>
+              <p>
+                Elm Street 30 <br />
+                WF6-1AM
+              </p>
+
+              <p>
+                <strong> Infoline </strong>
+                <br class="md-d-block" />
+                +44 1924242422
+              </p>
+              <p>
+                <strong> E-mail </strong>
+                <br class="md-d-block" />
+                hello@gmail.com
+              </p>
+            </div>
+            <div class="text open-hours-wrapper">
+              <strong class="title-2">Opening Hours</strong>
+              <div class="negative-margin">
+                <table class="open-hours">
+                  <tr>
+                    <td>Monday</td>
+                    <td>10:00 - 16:00</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>8:00 - 16:00</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>8:00 - 16:00</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>8:00 - 16:00</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>8:00 - 16:00</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>8:00 - 12:00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-form" id="contact-form">
+          <h4 class="title-2">Contact Form</h4>
+          <div class="form-wrapper">
+            <form class="contact-form" novalidate>
+              <div class="form-field-wrapper">
+                <div class="form-field">
+                  <label
+                    class="form-field-label"
+                    for="contactform[name]"
+                    class="form-label required"
+                    >Name and Surname:</label
+                  >
+                  <input
+                    class="form-field-input"
+                    type="text"
+                    name="contactform[name]"
+                    id="contactform[name]"
+                    class="form-control"
+                  />
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <div class="form-field-wrapper">
+                <div class="form-field">
+                  <label
+                    for="contactform[email]"
+                    class="form-field-label required"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    name="contactform[email]"
+                    id="contactform[email]"
+                    class="form-control"
+                  />
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <div class="form-field-wrapper">
+                <div class="form-field">
+                  <label for="contactform[phone]" class="form-label"
+                    >Phone:</label
+                  >
+                  <input
+                    type="tel"
+                    name="contactform[phone]"
+                    id="contactform[phone]"
+                    class="form-control"
+                  />
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <div class="form-field-wrapper">
+                <div class="form-field">
+                  <label for="contactform[option]" class="form-label required"
+                    >Reason for contact</label
+                  >
+                  <select
+                    name="contactform[option]"
+                    class="form-control"
+                    id="contactform[option]"
+                  >
+                    <option value="">choose</option>
+                    <option value="problems">Reservation problems</option>
+                    <option value="meeting">Make an appointment</option>
+                  </select>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <div class="form-field-wrapper">
+                <div class="form-field flex-container">
+                  <span class="form-label required"
+                    >Are you our customer?:</span
+                  >
+                  <div class="radio-field">
+                    <input
+                      type="radio"
+                      name="contactform[client]"
+                      id="contactform[client]-yes"
+                      value="yes"
+                    />
+                    <label
+                      for="contactform[client]-yes"
+                      class="light-label text-uppercase"
+                    >
+                      <span class="radio-styled"></span>
+                      YES
+                    </label>
+                    <input
+                      type="radio"
+                      name="contactform[client]"
+                      id="contactform[client]-no"
+                      value="no"
+                    />
+                    <label
+                      for="contactform[client]-no"
+                      class="light-label text-uppercase"
+                    >
+                      <span class="radio-styled"></span>
+                      NO
+                    </label>
+                  </div>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <!-- -- -->
+              <!-- -- -->
+              <div class="form-field-wrapper contact-day-field">
+                <div class="form-field flex-container">
+                  <span class="form-label required"
+                    >Preferred contact day:</span
+                  >
+                  <div class="grid-container contact-day-wrapper">
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="monday"
+                      />
+                      <label for="monday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Monday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="tuesday"
+                      />
+                      <label for="tuesday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Tuesday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="wednesday"
+                      />
+                      <label for="wednesday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Wednesday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="thursday"
+                      />
+                      <label for="thursday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Thursday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="friday"
+                      />
+                      <label for="friday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Friday
+                      </label>
+                    </div>
+                    <div class="grid-item">
+                      <input
+                        type="checkbox"
+                        name="contactform[contactday][]"
+                        data-group="group"
+                        id="saturday"
+                      />
+                      <label for="saturday" class="light-label">
+                        <span class="checkbox-styled"></span>
+                        Saturday
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <div class="form-field-wrapper textarea-field">
+                <div class="form-field flex-container">
+                  <label for="contactform[message]" class="form-label required"
+                    >Message</label
+                  >
+                  <textarea
+                    name="contactform[message]"
+                    id="contactform[message]"
+                    class="form-control area-control"
+                  ></textarea>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <div class="form-field-wrapper approval-field">
+                <div class="form-field flex-container">
+                  <input
+                    type="checkbox"
+                    name="contactform[approval]"
+                    id="contactform[approval]"
+                  />
+                  <label for="contactform[approval]" class="light-label">
+                    <span class="checkbox-styled"></span>
+                    I agree with the website regulations
+                  </label>
+                </div>
+                <div class="error-wrapper"></div>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-outline">Send</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="info-section map-section" id="way-to-us">
+          <h4 class="heading heading-2">Way to us</h4>
+          <div class="negative-margin">
+            <div class="map-wrapper" id="map"></div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="col">
+          <h5 class="col-title">Info</h5>
+          <a href="/">Delivery</a>
+          <a href="/">Claim</a>
+          <a href="/">Privacy policy</a>
+          <a href="/">About Us</a>
+        </div>
+        <div class="col">
+          <h5 class="col-title">&nbsp</h5>
+          <a href="/">Order</a>
+          <a href="/">Shop rules</a>
+        </div>
+        <div class="col">
+          <h5 class="col-title">Product</h5>
+          <a href="/">Sport Shoes</a>
+          <a href="/">Winter Shoes</a>
+          <a href="/">Casual shoes</a>
+        </div>
+        <div class="row">
+          <h5 class="col-title">Product</h5>
+          <a class="footer-social facebook" href="/">facebook</a>
+          <a class="footer-social linkin" href="/">linkin</a>
+          <a class="footer-social twitter" href="/">twitter</a>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="footer-bar">
+        <a href="/index.html" class="logo">
+          <img class="logo-img" src="./assets/img/logo.png" alt="logo" />
+          <p class="logo-text">Shoes Mania</p>
+        </a>
+
+        <div class="footer-bar-copy">
+          <p class="footer-copyright">
+            Copyright (c) 2020 created by Mariusz Krawczyk
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

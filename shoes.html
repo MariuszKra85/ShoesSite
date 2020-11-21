@@ -3,9 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/e30232a414.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Playfair+Display|Raleway:400,700&amp;display=swap&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>shoes</title>
   </head>
   <body>
-    shoes
+    <header class="header">
+      <div class="hero">
+        <div class="hero-bg"></div>
+        <div class="topBar">
+          <a href="/index.html" class="logo">
+            <img class="logo-img" src="./assets/img/logo.png" alt="logo" />
+            <p class="logo-text">Shoes Mania</p>
+          </a>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item dropdown-toggle">
+                Product
+                <div class="dropdown-menu">
+                  <a class="dropdown-menu-item" href="./shoes.html#sport"
+                    >Sport shoes</a
+                  >
+                  <a class="dropdown-menu-item" href="./shoes.html#casual"
+                    >Casual shoes</a
+                  >
+                  <a class="dropdown-menu-item" href="./shoes.html#winter"
+                    >winter shoes</a
+                  >
+                </div>
+                <img
+                  class="dropdown-arrow"
+                  src="./assets/img/arrow-white.svg"
+                  alt="arrow-white"
+                />
+              </li>
+              <li class="nav-item"><a href="./index.html">About Us</a></li>
+              <li class="nav-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero-content flex-column flex-center">
+          <h1 class="hero-title">Shoes Mania</h1>
+          <p class="hero-subtitle">For Her and for Him</p>
+          <button class="hero-btn">view</button>
+        </div>
+      </div>
+    </header>
+    <main class="main-product">
+      <div class="shoes-nav">
+        <div class="shoes-nav-item"><a href="#sport">sport</a></div>
+        <div class="shoes-nav-item"><a href="#casual">casual</a></div>
+        <div class="shoes-nav-item"><a href="#winter">winter</a></div>
+      </div>
+      <section class="product">
+        <div class="product-wrapper">
+          <div class="label sport" id="sport">
+            <h3 class="label-title">Sport</h3>
+            <p class="label-text">Perfect for an active lifestyle</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/sport-1.jpg"
+              alt="sport shoes"
+            />
+            <p class="card-desc">blue sport shoes</p>
+            <p class="card-price">20 gbp</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/sport-2.jpg"
+              alt="sport shoes"
+            />
+            <p class="card-desc">blue sport shoes</p>
+            <p class="card-price">44 gbp</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/sport-3.jpg"
+              alt="sport shoes"
+            />
+            <p class="card-desc">orange sport shoes</p>
+            <p class="card-price">29 gbp</p>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="label casual" id="casual">
+            <h3 class="label-title">Casual</h3>
+            <p class="label-text">Perfect for an active lifestyle</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/casual-1.jpg"
+              alt="casual shoes"
+            />
+            <p class="card-desc">Casual shoes 1</p>
+            <p class="card-price">20 gbp</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/casual-2.jpg"
+              alt="casual shoes"
+            />
+            <p class="card-desc">Casual shoes 2</p>
+            <p class="card-price">44 gbp</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/casual-3.jpg"
+              alt="casual shoes"
+            />
+            <p class="card-desc">Casual shoes 3</p>
+            <p class="card-price">29 gbp</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/casual-1.jpg"
+              alt="casual shoes"
+            />
+            <p class="card-desc">Casual shoes 4</p>
+            <p class="card-price">20 gbp</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/casual-2.jpg"
+              alt="casual shoes"
+            />
+            <p class="card-desc">Casual shoes 5</p>
+            <p class="card-price">20 gbp</p>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="label winter" id="winter">
+            <h3 class="label-title">winter</h3>
+            <p class="label-text">Perfect for an active lifestyle</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/winter-1.jpg"
+              alt="winter shoes"
+            />
+            <p class="card-desc">Winter shoes 1</p>
+            <p class="card-price">20 gbp</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/winter-2.jpg"
+              alt="winter shoes"
+            />
+            <p class="card-desc">Winter shoes 2</p>
+            <p class="card-price">44 gbp</p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/img/winter-3.jpg"
+              alt="winter shoes"
+            />
+            <p class="card-desc">Winter shoes 3</p>
+            <p class="card-price">29 gbp</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="col">
+          <h5 class="col-title">Info</h5>
+          <a href="/">Delivery</a>
+          <a href="/">Claim</a>
+          <a href="/">Privacy policy</a>
+          <a href="/">About Us</a>
+        </div>
+        <div class="col">
+          <h5 class="col-title">&nbsp</h5>
+          <a href="/">Order</a>
+          <a href="/">Shop rules</a>
+        </div>
+        <div class="col">
+          <h5 class="col-title">Product</h5>
+          <a href="/">Sport Shoes</a>
+          <a href="/">Winter Shoes</a>
+          <a href="/">Casual shoes</a>
+        </div>
+        <div class="row">
+          <h5 class="col-title">Product</h5>
+          <a class="footer-social facebook" href="/">facebook</a>
+          <a class="footer-social linkin" href="/">linkin</a>
+          <a class="footer-social twitter" href="/">twitter</a>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="footer-bar">
+        <a href="/index.html" class="logo">
+          <img class="logo-img" src="./assets/img/logo.png" alt="logo" />
+          <p class="logo-text">Shoes Mania</p>
+        </a>
+
+        <div class="footer-bar-copy">
+          <p class="footer-copyright">
+            Copyright (c) 2020 created by Mariusz Krawczyk
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

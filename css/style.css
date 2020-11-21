@@ -479,4 +479,164 @@ a {
 .hr {
   border: 1px solid #303430;
 }
+
+.main-product {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.shoes-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.shoes-nav-item {
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.shoes-nav-item:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+.shoes-nav-item:last-child {
+  border-radius: 0 20px 20px 0;
+}
+
+.shoes-nav-item a {
+  color: black;
+}
+
+.product-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 5px;
+}
+
+.label {
+  background-color: #86c878;
+  padding: 20px 20px 30px 20px;
+  width: 300px;
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.label-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.label-text {
+  margin-bottom: 20px;
+}
+
+.sport {
+  background-color: #86c878;
+}
+
+.winter {
+  background-color: #78a1c8;
+}
+
+.casual {
+  background-color: #78c8c0;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 310px;
+  margin: 20px;
+}
+
+.card-img {
+  width: 300px;
+  height: 210px;
+}
+
+.card-desc {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.card-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #86c878;
+}
+
+.main-contact {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.contact-article {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.contact-aside {
+  font-size: 20px;
+}
+
+.open-hours-wrapper {
+  margin: 40px 0 50px;
+}
+
+.contact-form {
+  max-width: 700px;
+}
+
+.form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form-field-label {
+  min-width: 200px;
+  font-size: 20px;
+}
+
+.form-field-input {
+  padding: 10px;
+  width: 300px;
+}
 /*# sourceMappingURL=style.css.map */

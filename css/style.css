@@ -54,6 +54,28 @@ a {
   margin: 0 auto;
 }
 
+.text {
+  font-family: "Raleway";
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 45px;
+  margin: 30px 0;
+}
+
+.title-2 {
+  margin: 30px 0 20px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.title-3 {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .hero {
   color: white;
 }
@@ -99,9 +121,9 @@ a {
   transition: all ease-in-out 0.3s;
   color: white;
   text-transform: uppercase;
-  margin-top: 40px;
-  padding: 15px;
-  background-color: #4c5bac;
+  margin-top: 60px;
+  padding: 25px;
+  background-color: #86c878;
   border: none;
   border-radius: 50px;
   width: 200px;
@@ -143,6 +165,7 @@ a {
 }
 
 .logo-text {
+  white-space: nowrap;
   font-size: 32px;
   font-weight: 700;
 }
@@ -171,7 +194,7 @@ a {
 .dropdown-toggle:hover {
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
-  background: #4c5bac;
+  background: #86c878;
 }
 
 .dropdown-toggle:hover .dropdown-menu {
@@ -189,12 +212,13 @@ a {
 
 .dropdown-toggle:hover .dropdown-menu-item {
   padding: 10px;
+  background-color: #191c19;
 }
 
 .dropdown-toggle:hover .dropdown-menu-item:hover {
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
-  background-color: #4c5bac;
+  background-color: #86c878;
 }
 
 .dropdown-menu {
@@ -206,6 +230,253 @@ a {
 }
 
 .main {
-  margin-top: 500px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-nav {
+  margin: 50px 50px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.side-nav-item {
+  width: 220px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 20px;
+  color: #000000;
+  border-bottom: 1px solid lightgray;
+}
+
+.aboutUs {
+  max-width: 1000px;
+  border-left: lightgray 1px solid;
+  padding-left: 50px;
+}
+
+.aboutUs-title {
+  border-bottom: 1px solid lightgray;
+  margin-top: 55px;
+}
+
+.aboutUs-subtitle {
+  font-size: 35px;
+  margin: 40px 0 20px;
+}
+
+.aboutUs-ourShoes {
+  margin-top: 50px;
+}
+
+.img-wrapper {
+  margin-top: 30px;
+}
+
+.quote {
+  margin-top: 50px;
+  border-top: solid #86c878 1px;
+  border-bottom: #86c878 solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quote-text {
+  margin: 20px 30px;
+}
+
+.quote i {
+  margin-top: 20px;
+}
+
+.present-list {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.present-list-item {
+  margin-bottom: 5px;
+}
+
+.future-list {
+  margin-top: 30px;
+  list-style-position: inside;
+}
+
+.future-list-item {
+  margin-bottom: 5px;
+}
+
+.video {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.video-frame {
+  width: 100%;
+  height: 400px;
+}
+
+.table {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.table tr th:first-child {
+  text-align: center;
+  width: 150px;
+}
+
+.table tr td:first-child {
+  text-align: center;
+  width: 150px;
+}
+
+.table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
+  height: 50px;
+  color: #080407;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.table-row-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.table-row-grey {
+  background-color: lightgrey;
+}
+
+.table-row-center {
+  margin: 0 auto;
+}
+
+.question {
+  border-top: 1px solid lightgrey;
+  margin-bottom: 50px;
+}
+
+.question:last-child {
+  padding-bottom: 50px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.footer {
+  height: 350px;
+  background-color: #191c19;
+  padding-bottom: 30px;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 100px;
+  max-width: 1200px;
+}
+
+.footer-social {
+  margin-right: 10px;
+  display: inline-block;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999999px;
+}
+
+.footer-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-bar-copy {
+  padding-left: 30px;
+  color: white;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.facebook {
+  background-image: url(../assets/img/icon-fb-white.svg);
+}
+
+.linkin {
+  background-image: url(../assets/img/icon-in-white.svg);
+}
+
+.twitter {
+  background-image: url(../assets/img/icon-twitter-white.svg);
+}
+
+.col {
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col-title {
+  font-size: 25px;
+  padding: 30px 0;
+  color: #86c878;
+}
+
+.col a {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.hr {
+  border: 1px solid #303430;
 }
 /*# sourceMappingURL=style.css.map */

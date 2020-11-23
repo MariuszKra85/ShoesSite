@@ -4,8 +4,16 @@
   "description": "simple landing side",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Mariusz Krawczyk",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }

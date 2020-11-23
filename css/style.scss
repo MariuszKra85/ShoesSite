@@ -493,3 +493,24 @@ a {
     width: 300px;
   }
 }
+.light-label {
+  margin: 10px 0;
+}
+.day {
+  margin: 10px 0;
+}
+.btn-group {
+  display: flex;
+}
+.form-btn {
+  background-color: $primary;
+  margin: 40px 0 20px;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 20px;
+}
+.map-wrapper {
+  width: 700px;
+  height: 300px;
+  margin: 20px 0 30px;
+}

@@ -30,7 +30,7 @@
           </a>
           <nav class="nav">
             <ul class="nav-list">
-              <li class="nav-item dropdown-toggle">
+              <li class=day dropdown-toggle">
                 Product
                 <div class="dropdown-menu">
                   <a class="dropdown-menu-item" href="./shoes.html#sport"
@@ -144,7 +144,6 @@
                     type="text"
                     name="contactform[name]"
                     id="contactform[name]"
-                    class="form-control"
                   />
                 </div>
                 <div class="error-wrapper"></div>
@@ -161,7 +160,7 @@
                     type="email"
                     name="contactform[email]"
                     id="contactform[email]"
-                    class="form-control"
+                    class="form-field-input"
                   />
                 </div>
                 <div class="error-wrapper"></div>
@@ -169,14 +168,14 @@
               <!-- -- -->
               <div class="form-field-wrapper">
                 <div class="form-field">
-                  <label for="contactform[phone]" class="form-label"
+                  <label for="contactform[phone]" class="form-field-label"
                     >Phone:</label
                   >
                   <input
                     type="tel"
                     name="contactform[phone]"
                     id="contactform[phone]"
-                    class="form-control"
+                    class="form-field-input"
                   />
                 </div>
                 <div class="error-wrapper"></div>
@@ -184,12 +183,14 @@
               <!-- -- -->
               <div class="form-field-wrapper">
                 <div class="form-field">
-                  <label for="contactform[option]" class="form-label required"
+                  <label
+                    for="contactform[option]"
+                    class="form-field-label required"
                     >Reason for contact</label
                   >
                   <select
                     name="contactform[option]"
-                    class="form-control"
+                    class="form-field-input"
                     id="contactform[option]"
                   >
                     <option value="">choose</option>
@@ -202,7 +203,7 @@
               <!-- -- -->
               <div class="form-field-wrapper">
                 <div class="form-field flex-container">
-                  <span class="form-label required"
+                  <span class="form-field-label required"
                     >Are you our customer?:</span
                   >
                   <div class="radio-field">
@@ -239,12 +240,12 @@
               <!-- -- -->
               <!-- -- -->
               <div class="form-field-wrapper contact-day-field">
-                <div class="form-field flex-container">
-                  <span class="form-label required"
+                <div class="form-field">
+                  <span class="form-field-label required"
                     >Preferred contact day:</span
                   >
-                  <div class="grid-container contact-day-wrapper">
-                    <div class="grid-item">
+                  <div class="days-wrapper">
+                    <div class="day">
                       <input
                         type="checkbox"
                         name="contactform[contactday][]"
@@ -256,7 +257,7 @@
                         Monday
                       </label>
                     </div>
-                    <div class="grid-item">
+                    <div class="day">
                       <input
                         type="checkbox"
                         name="contactform[contactday][]"
@@ -268,7 +269,7 @@
                         Tuesday
                       </label>
                     </div>
-                    <div class="grid-item">
+                    <div class="day">
                       <input
                         type="checkbox"
                         name="contactform[contactday][]"
@@ -280,7 +281,7 @@
                         Wednesday
                       </label>
                     </div>
-                    <div class="grid-item">
+                    <div class="day">
                       <input
                         type="checkbox"
                         name="contactform[contactday][]"
@@ -292,7 +293,7 @@
                         Thursday
                       </label>
                     </div>
-                    <div class="grid-item">
+                    <div class="day">
                       <input
                         type="checkbox"
                         name="contactform[contactday][]"
@@ -304,7 +305,7 @@
                         Friday
                       </label>
                     </div>
-                    <div class="grid-item">
+                    <div class="day">
                       <input
                         type="checkbox"
                         name="contactform[contactday][]"
@@ -322,7 +323,7 @@
               </div>
               <div class="form-field-wrapper textarea-field">
                 <div class="form-field flex-container">
-                  <label for="contactform[message]" class="form-label required"
+                  <label for="contactform[message]" class="form-field-label required"
                     >Message</label
                   >
                   <textarea
@@ -334,7 +335,7 @@
                 <div class="error-wrapper"></div>
               </div>
               <div class="form-field-wrapper approval-field">
-                <div class="form-field flex-container">
+                <div class="form-field-label flex-container">
                   <input
                     type="checkbox"
                     name="contactform[approval]"
@@ -347,17 +348,15 @@
                 </div>
                 <div class="error-wrapper"></div>
               </div>
-              <div class="btn-group">
-                <button class="btn btn-outline">Send</button>
+              <div class="btn-group flex-center">
+                <button class="form-btn">Send</button>
               </div>
             </form>
           </div>
         </section>
         <section class="info-section map-section" id="way-to-us">
-          <h4 class="heading heading-2">Way to us</h4>
-          <div class="negative-margin">
+          <h4 class="title-2">Way to us</h4>
             <div class="map-wrapper" id="map"></div>
-          </div>
         </section>
       </article>
     </main>
@@ -402,5 +401,8 @@
         </div>
       </div>
     </footer>
+    <script src="./js/maphead.js"></script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/map.js"></script>
   </body>
 </html>

@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -397,7 +401,7 @@ a {
 }
 
 .footer {
-  height: 350px;
+  height: 100%;
   background-color: #191c19;
   padding-bottom: 30px;
 }
@@ -474,6 +478,12 @@ a {
 .col a {
   font-size: 15px;
   padding: 5px;
+}
+
+.row {
+  margin-bottom: 20px;
+  padding: 0 50px;
+  min-width: 200px;
 }
 
 .hr {
@@ -666,5 +676,119 @@ a {
   width: 700px;
   height: 300px;
   margin: 20px 0 30px;
+}
+
+.hamburger {
+  display: none;
+  width: 60px;
+  height: 60px;
+  background-color: #191c19;
+}
+
+.bar-line {
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.bar-line::after,
+.bar-line::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.bar-line::before {
+  width: 100%;
+  background-color: #fff;
+  top: -10px;
+}
+
+.bar-line::after {
+  width: 66%;
+  background-color: #3067cd;
+  bottom: -10px;
+}
+
+@media screen and (max-width: 740px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #191c19;
+  }
+  .nav-list {
+    display: none;
+    top: 80px;
+    right: 20px;
+    background-color: #191c19;
+    position: absolute;
+  }
+  .active {
+    display: block;
+  }
+  .dropdown-toggle:hover {
+    display: block;
+  }
+  .dropdown-toggle:hover .dropdown-menu {
+    margin-right: -10px;
+    margin-bottom: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dropdown-toggle:hover .dropdown-menu-item {
+    width: 100%;
+  }
+  .hero-content {
+    margin: 0;
+    background-image: url(../assets/img/hero-bg-small.jpg);
+  }
+  .side-nav {
+    display: none;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .notvis {
+    display: none;
+  }
+  .product-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .label {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero {
+    color: white;
+  }
+  .img-wrapper {
+    margin-right: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

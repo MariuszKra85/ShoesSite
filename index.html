@@ -30,7 +30,14 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item dropdown-toggle">
-                Product
+                <div class="nav-item-wrapper">
+                  Product
+                  <img
+                    class="dropdown-arrow"
+                    src="./assets/img/arrow-white.svg"
+                    alt="arrow-white"
+                  />
+                </div>
                 <div class="dropdown-menu">
                   <a class="dropdown-menu-item" href="./shoes.html#sport"
                     >Sport shoes</a
@@ -42,15 +49,13 @@
                     >winter shoes</a
                   >
                 </div>
-                <img
-                  class="dropdown-arrow"
-                  src="./assets/img/arrow-white.svg"
-                  alt="arrow-white"
-                />
               </li>
               <li class="nav-item"><a href="./index.html">About Us</a></li>
               <li class="nav-item"><a href="./contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger" id="menu">
+              <span class="bar-line"></span>
+            </div>
           </nav>
         </div>
         <div class="hero-content flex-column flex-center">
@@ -72,8 +77,18 @@
           <h3 class="aboutUs-subtitle">About Shoes</h3>
           <p class="text">Aliquip nulla ut ex aute ea.</p>
           <div class="img-wrapper">
-            <img src="./assets/img/about-1.png" alt="shoes-1" />
-            <img src="./assets/img/about-2.png" alt="shoes-1" />
+            <img
+              width="430"
+              height="330"
+              src="./assets/img/about-1.png"
+              alt="shoes-1"
+            />
+            <img
+              width="430"
+              height="330"
+              src="./assets/img/about-2.png"
+              alt="shoes-1"
+            />
           </div>
           <h4 class="title-2">Begining</h4>
           <p class="text">
@@ -270,7 +285,7 @@
           <a href="/">About Us</a>
         </div>
         <div class="col">
-          <h5 class="col-title">&nbsp</h5>
+          <h5 class="col-title notvis">&nbsp</h5>
           <a href="/">Order</a>
           <a href="/">Shop rules</a>
         </div>
@@ -281,7 +296,7 @@
           <a href="/">Casual shoes</a>
         </div>
         <div class="row">
-          <h5 class="col-title">Product</h5>
+          <h5 class="col-title">Socia</h5>
           <a class="footer-social facebook" href="/">facebook</a>
           <a class="footer-social linkin" href="/">linkin</a>
           <a class="footer-social twitter" href="/">twitter</a>
@@ -301,5 +316,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/togglemenu.js"></script>
   </body>
 </html>

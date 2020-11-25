@@ -35,7 +35,14 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class=day dropdown-toggle">
-                Product
+                <div class="nav-item-wrapper">
+                  Product
+                  <img
+                    class="dropdown-arrow"
+                    src="./assets/img/arrow-white.svg"
+                    alt="arrow-white"
+                  />
+                </div>
                 <div class="dropdown-menu">
                   <a class="dropdown-menu-item" href="./shoes.html#sport"
                     >Sport shoes</a
@@ -47,15 +54,14 @@
                     >winter shoes</a
                   >
                 </div>
-                <img
-                  class="dropdown-arrow"
-                  src="./assets/img/arrow-white.svg"
-                  alt="arrow-white"
-                />
+
               </li>
               <li class="nav-item"><a href="./index.html">About Us</a></li>
               <li class="nav-item"><a href="./contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger" id="menu">
+              <span class="bar-line"></span>
+            </div>
           </nav>
         </div>
         <div class="hero-content flex-column flex-center">
@@ -374,7 +380,7 @@
           <a href="/">About Us</a>
         </div>
         <div class="col">
-          <h5 class="col-title">&nbsp</h5>
+          <h5 class="col-title notvis">&nbsp</h5>
           <a href="/">Order</a>
           <a href="/">Shop rules</a>
         </div>
@@ -407,5 +413,6 @@
     </footer>
     <script src="./js/validation.js"></script>
     <script src="./js/map.js"></script>
+    <script src="./js/togglemenu.js"></script>
   </body>
 </html>

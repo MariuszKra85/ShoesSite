@@ -15,6 +15,9 @@ $secondary-font: "Raleway";
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $primary-font, sans-serif;
 }
@@ -294,6 +297,7 @@ a {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+
     &-black {
       background-color: #000000;
       color: #ffffff;
@@ -316,7 +320,7 @@ a {
   }
 }
 .footer {
-  height: 350px;
+  height: 100%;
   background-color: $bg-primary;
   padding-bottom: 30px;
 
@@ -371,6 +375,11 @@ a {
     font-size: 15px;
     padding: 5px;
   }
+}
+.row {
+  margin-bottom: 20px;
+  padding: 0 50px;
+  min-width: 200px;
 }
 .hr {
   border: 1px solid #303430;
@@ -513,4 +522,99 @@ a {
   width: 700px;
   height: 300px;
   margin: 20px 0 30px;
+}
+.hamburger {
+  display: none;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-primary;
+}
+.bar-line {
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 4px;
+}
+.bar-line::after,
+.bar-line::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border-radius: 4px;
+}
+.bar-line::before {
+  width: 100%;
+  background-color: #fff;
+  top: -10px;
+}
+.bar-line::after {
+  width: 66%;
+  background-color: #3067cd;
+  bottom: -10px;
+}
+@media screen and (max-width: 740px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-primary;
+  }
+  .nav-list {
+    display: none;
+    top: 80px;
+    right: 20px;
+    background-color: $bg-primary;
+    position: absolute;
+  }
+  .active {
+    display: block;
+  }
+  .dropdown-toggle:hover {
+    display: block;
+    .dropdown-menu {
+      margin-right: -10px;
+      margin-bottom: -10px;
+      display: flex;
+      position: inherit;
+      flex-direction: column;
+
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+
+  .hero-content {
+    margin: 0;
+    background-image: url(../assets/img/hero-bg-small.jpg);
+  }
+  .side-nav {
+    display: none;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .notvis {
+    display: none;
+  }
+  .product-wrapper {
+    justify-content: center;
+  }
+  .label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .hero {
+    color: white;
+  }
+  .img-wrapper {
+    margin-right: 50px;
+  }
 }
